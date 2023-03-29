@@ -1,10 +1,12 @@
 package main
 
 import (
-	"fmt"
+	"context"
+	larkim "github.com/larksuite/oapi-sdk-go/v3/service/im/v1"
+	"log"
 	"start-feishubot/handlers"
 	"start-feishubot/initialization"
-	"start-feishubot/services"
+	"start-feishubot/services/openai"
 
 	larkcard "github.com/larksuite/oapi-sdk-go/v3/card"
 
@@ -21,16 +23,19 @@ var (
 )
 
 func main() {
+	initialization.InitRoleList()
 	pflag.Parse()
 	config := initialization.LoadConfig(*cfg)
 	initialization.LoadLarkClient(*config)
-
-	gpt := &services.ChatGPT{ApiKey: config.OpenaiApiKey}
-	handlers.InitHanders(*gpt, *config)
+	gpt := openai.NewChatGPT(*config)
+	handlers.InitHandlers(gpt, *config)
 
 	eventHandler := dispatcher.NewEventDispatcher(
 		config.FeishuAppVerificationToken, config.FeishuAppEncryptKey).
-		OnP2MessageReceiveV1(handlers.Handler)
+		OnP2MessageReceiveV1(handlers.Handler).
+		OnP2MessageReadV1(func(ctx context.Context, event *larkim.P2MessageReadV1) error {
+			return handlers.ReadHandler(ctx, event)
+		})
 
 	cardHandler := larkcard.NewCardActionHandler(
 		config.FeishuAppVerificationToken, config.FeishuAppEncryptKey,
@@ -48,8 +53,9 @@ func main() {
 		sdkginext.NewCardActionHandlerFunc(
 			cardHandler))
 
-	fmt.Println("http server started",
-		"http://localhost:9000/webhook/event")
-	r.Run(":9000")
+	err := initialization.StartServer(*config, r)
+	if err != nil {
+		log.Fatalf("failed to start server: %v", err)
+	}
 
 }

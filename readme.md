@@ -2,6 +2,21 @@
     <img src='./docs/img3.png' alt='' width='800'/>
 </p>
 
+<details align='center'>
+    <summary> 📷 点击展开完整功能截图</summary>
+    <br>
+    <p align='center'>
+    <img src='https://user-images.githubusercontent.com/50035229/224493411-085ba405-81cd-4972-b87b-74a2e811f23d.png' alt='语音对话' width='800'/>
+    <img src='https://user-images.githubusercontent.com/50035229/223590381-ed38db74-39f3-4e77-bd3a-aaa54d679286.png' alt='角色扮演' width='800'/>
+    <img src='https://user-images.githubusercontent.com/50035229/228092540-bb9c74de-fccb-4d07-9797-f3fe1fb3705a.png' alt='角色列表' width='800'/>
+    <img src='https://user-images.githubusercontent.com/50035229/223590817-37a56eac-ab6e-4293-862a-de0988ac50b7.png' alt='文字成图' width='800'/>
+    <img src='https://user-images.githubusercontent.com/50035229/224531308-378a5bc3-2964-4e32-905f-8237dafc3f91.png' alt='图片变体' width='800'/>
+    <img src='https://user-images.githubusercontent.com/50035229/227900488-10a53176-f4e3-4b9e-bf9e-b60d958aefc8.png' alt='余额查询' width='800'/>
+    <img src='https://user-images.githubusercontent.com/50035229/224531775-3f0e1e1b-a373-4774-a8f0-e120ccba6670.png' alt='帮助菜单' width='800'/>
+    </p>
+
+</details>
+
 <br>
 
 <p align='center'>
@@ -13,27 +28,49 @@
 
 ## 👻 机器人功能
 
-- 🗣 畅所欲言，直接语音交流 🚧
-- 💬 私人和群聊支持多话题同时对话，让讨论更加连贯和高效
-- 🔄 持续对话联系上下文，回复对话框即可继续同一话题讨论
-- ⏰ 超时自动结束对话，同时支持清除讨论历史
-- 📝 支持富文本卡片回复，让信息更加丰富多彩
-- 👍 交互式反馈提醒，及时获取机器人处理结果
-- 🎭 支持角色扮演的场景模式，为讨论增添乐趣和创意
-- 🏞 内置丰富的场景预设，让用户更方便地管理场景 🚧
-- 🔙 轻松恢复历史话题，继续讨论 🚧
-- 🖼 支持根据文本生成图片，增强信息呈现效果 🚧
-- 🔒 内置管理员模式，使用更加安全可靠 🚧
+🗣 语音交流：私人直接与机器人畅所欲言
 
-<p align='center'>
-    <img src='./docs/help.png' alt='' width='600'/>
-</p>
+💬 多话题对话：支持私人和群聊多话题讨论，高效连贯
+
+🖼 文本成图：支持文本成图和以图搜图
+
+🛖 场景预设：内置丰富场景列表，一键切换AI角色
+
+🎭 角色扮演：支持场景模式，增添讨论乐趣和创意
+
+🔄 上下文保留：回复对话框即可继续同一话题讨论
+
+⏰ 自动结束：超时自动结束对话，支持清除讨论历史
+
+📝 富文本卡片：支持富文本卡片回复，信息更丰富多彩
+
+👍 交互式反馈：即时获取机器人处理结果
+
+🎰 余额查询：即时获取token消耗情况
+
+🔙 历史回档：轻松回档历史对话，继续话题讨论 🚧
+
+🔒 管理员模式：内置管理员模式，使用更安全可靠 🚧
+
+🌐 多token负载均衡：优化生产级别的高频调用场景
+
+↩️ 支持反向代理：为不同地区的用户提供更快、更稳定的访问体验
+
+📚 与飞书文档互动：成为企业员工的超级助手 🚧
+
+🎥 话题内容秒转PPT：让你的汇报从此变得更加简单 🚧
+
+📊 表格分析：轻松导入飞书表格，提升数据分析效率 🚧
+
+🍊 私有数据训练：利用公司产品信息对GPT二次训练，更好地满足客户个性化需求 🚧
 
 ## 🌟 项目特点
 
-- 🍏 基于 OpenAI-[gpt-3.5-turbo](https://platform.openai.com/account/api-keys) 接口
-- 🍎 通过 lark，将 ChatGPT 接入[飞书](https://open.feishu.cn/app)
-- 🥒 支持[Serverless 云函数](https://github.com/serverless-devs/serverless-devs)、[本地环境](https://dashboard.cpolar.com/login)、[Docker](https://www.docker.com/)、[二进制安装包](https://github.com/Leizhenpeng/feishu-chatgpt/releases/)多种渠道部署
+- 🍏 对话基于 OpenAI-[gpt-3.5-turbo](https://platform.openai.com/account/api-keys) 接口
+- 🍎 通过 lark，将 ChatGPT 接入[飞书](https://open.feishu.cn/app)和[飞书国际版](https://www.larksuite.com/)
+- 🥒
+  支持[Serverless 云函数](https://github.com/serverless-devs/serverless-devs)、[本地环境](https://dashboard.cpolar.com/login)、[Docker](https://www.docker.com/)、[二进制安装包](https://github.com/Leizhenpeng/feishu-chatgpt/releases/)
+  等多种渠道部署
 - 🍋 基于[goCache](https://github.com/patrickmn/go-cache)内存键值对缓存
 
 ## 项目部署
@@ -172,6 +209,36 @@ s deploy
 
 更多详细介绍，参考[仅需 1min，用 Serverless 部署基于 gin 的飞书机器人](https://www.bilibili.com/video/BV1nW4y1378T/)
 <br>
+</details>
+
+<details>
+    <summary>使用 Railway 平台一键部署</summary>
+
+
+Railway 是一家国外的 Serverless 平台，支持多种语言，可以一键将 Github 上的代码仓库部署到 Railway 平台，然后在 Railway
+平台上配置环境变量即可。部署本项目的流程如下：
+
+#### 1. 生成 Railway 项目
+
+点击下方按钮即可创建一个对应的 Railway 项目，其会自动 Fork 本项目到你的 Github 账号下。
+
+[![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/10D-TF?referralCode=oMcVS2)
+
+#### 2. 配置环境变量
+
+在打开的页面中，配置环境变量，每个变量的说明如下图所示：
+
+
+<img src='https://user-images.githubusercontent.com/50035229/225005602-88d8678f-9d17-4dc5-8d1e-4abf64fb84fd.png' alt='Railway 环境变量' width='500px'/>
+
+#### 3. 部署项目
+
+填写完环境变量后，点击 Deploy 就完成了项目的部署。部署完成后还需获取对应的域名用于飞书机器人访问，如下图所示：
+
+<img src='https://user-images.githubusercontent.com/50035229/225006236-57cb3c8a-1b7d-4bfe-9c9b-099cb9179027.png' alt='Railway 域名' width='500px'/>
+
+如果不确定自己部署是否成功，可以通过访问上述获取到的域名 (https://xxxxxxxx.railway.app/ping) 来查看是否返回了`pong`
+，如果返回了`pong`，说明部署成功。
 
 </details>
 
@@ -187,9 +254,18 @@ docker run -d --name feishu-chatgpt -p 9000:9000 \
 --env APP_ENCRYPT_KEY=xxx \
 --env APP_VERIFICATION_TOKEN=xxx \
 --env BOT_NAME=chatGpt \
---env OPENAI_KEY=sk-xxx \
+--env OPENAI_KEY="sk-xxx1,sk-xxx2,sk-xxx3" \
+--env API_URL="https://api.openai.com" \
+--env HTTP_PROXY="" \
 feishu-chatgpt:latest
 ```
+
+注意:
+
+- `BOT_NAME` 为飞书机器人名称，例如 `chatGpt`
+- `OPENAI_KEY` 为openai key，多个key用逗号分隔，例如 `sk-xxx1,sk-xxx2,sk-xxx3`
+- `HTTP_PROXY` 为宿主机的proxy地址，例如 `http://host.docker.internal:7890`,没有代理的话，可以不用设置
+- `API_URL` 为openai api 接口地址，例如 `https://api.openai.com`, 没有反向代理的话，可以不用设置
 
 ---
 
@@ -204,7 +280,9 @@ docker run -d --restart=always --name feishu-chatgpt2 -p 9000:9000 -v /etc/local
 --env APP_ENCRYPT_KEY=xxx \
 --env APP_VERIFICATION_TOKEN=xxx \
 --env BOT_NAME=chatGpt \
---env OPENAI_KEY=sk-xxx \
+--env OPENAI_KEY="sk-xxx1,sk-xxx2,sk-xxx3" \
+--env API_URL=https://api.openai.com \
+--env HTTP_PROXY="" \
 dockerproxy.com/leizhenpeng/feishu-chatgpt:latest
 ```
 
@@ -217,11 +295,34 @@ dockerproxy.com/leizhenpeng/feishu-chatgpt:latest
 </details>
 
 <details>
+    <summary>docker-compose 部署</summary>
+<br>
+
+编辑 docker-compose.yaml，通过 environment 配置相应环境变量（或者通过 volumes 挂载相应配置文件），然后运行下面的命令即可
+
+```bash
+# 构建镜像
+docker compose build
+
+# 启动服务
+docker compose up -d
+
+# 停止服务
+docker compose down
+```
+
+事件回调地址: http://IP:9000/webhook/event
+卡片回调地址: http://IP:9000/webhook/card
+
+</details>
+
+<details>
     <summary>二进制安装包部署</summary>
 <br>
 
 1. 进入[release 页面](https://github.com/Leizhenpeng/feishu-chatgpt/releases/) 下载对应的安装包
-2. 解压安装包,修改 config.example.yml 中配置信息,另存为 config.yml
+2. 解压安装包,修改 config.example.yml 中配置信息,另存为 config.yaml
+3. 目录下添加文件 `role_list.yaml`，自定义角色，可以从这里获取：[链接](https://github.com/Leizhenpeng/feishu-chatgpt/blob/master/code/role_list.yaml)
 3. 运行程序入口文件 `feishu-chatgpt`
 
 事件回调地址: http://IP:9000/webhook/event
@@ -231,27 +332,51 @@ dockerproxy.com/leizhenpeng/feishu-chatgpt:latest
 
 ## 详细配置步骤
 
+<details align='left'>
+    <summary> 📸 点击展开飞书机器人配置的分步截图指导</summary>
+    <br>
+    <p align='center'>
+    <img src='https://user-images.githubusercontent.com/50035229/223943381-39e0466f-2a5e-472a-9863-94eafb5f17b0.png' alt='' width='800'/>
+    <img src='https://user-images.githubusercontent.com/50035229/223943448-228de5cb-0929-4d80-8087-8d8624dd6ddf.png' alt='' width='800'/>
+    <img src='https://user-images.githubusercontent.com/50035229/223943485-ef331784-7940-4657-b128-70c98391e72f.png' alt='' width='800'/>
+    <img src='https://user-images.githubusercontent.com/50035229/223943527-60e6653a-eb6e-4062-a076-b6c9da934352.png' alt='' width='800'/>
+    <img src='https://user-images.githubusercontent.com/50035229/223943972-f49adf9f-af5f-463a-8c7a-c1f0cac0e8c3.png' alt='' width='800'/>
+      <img src='https://user-images.githubusercontent.com/50035229/223944060-7ef630a4-4248-4509-852b-cad8bfffeefc.png' alt='' width='800'/>
+      <img src='https://user-images.githubusercontent.com/50035229/223944230-aff586be-31cc-40de-9b1a-7d4e259d54dd.png' alt='' width='800'/>
+      <img src='https://user-images.githubusercontent.com/50035229/223944350-917d115c-6c82-4d8b-9ec8-b5c82331a2dc.png' alt='' width='800'/>
+      <img src='https://user-images.githubusercontent.com/50035229/223944381-97396156-f5e2-467f-aaf6-b1f6e1c446b2.png' alt='' width='800'/>
+      <img src='https://user-images.githubusercontent.com/50035229/223945122-f7ab3d9a-6742-43d2-970e-ddb0f284c7fa.png' alt='' width='800'/>
+      <img src='https://user-images.githubusercontent.com/50035229/223944507-8d1a08d7-8b5b-4f32-a90d-fd338164ec82.png' alt='' width='800'/>
+      <img src='https://user-images.githubusercontent.com/50035229/223944515-fb505e84-c840-484a-8df5-612f60bf27ea.png' alt='' width='800'/>
+      <img src='https://user-images.githubusercontent.com/50035229/223944590-ad61320f-c14a-4542-80ad-dee2e6469b67.png' alt='' width='800'/>
+    </p>
+</details>
+
 - 获取 [OpenAI](https://platform.openai.com/account/api-keys) 的 KEY
 - 创建 [飞书](https://open.feishu.cn/) 机器人
-  1. 前往[开发者平台](https://open.feishu.cn/app?lang=zh-CN)创建应用,并获取到 APPID 和 Secret
-  2. 前往`应用功能-机器人`, 创建机器人
-  3. 从 cpolar 或者 serverless 获得公网地址,在飞书机器人后台的 `事件订阅` 板块填写。例如，
-     - `http://xxxx.r6.cpolar.top`为 cpolar 暴露的公网地址
-     - `/webhook/event`为统一的应用路由
-     - 最终的回调地址为 `http://xxxx.r6.cpolar.top/webhook/event`
-  4. 在飞书机器人后台的 `机器人` 板块，填写消息卡片请求网址。例如，
-     - `http://xxxx.r6.cpolar.top`为 cpolar 暴露的公网地址
-     - `/webhook/card`为统一的应用路由
-     - 最终的消息卡片请求网址为 `http://xxxx.r6.cpolar.top/webhook/card`
-  5. 在事件订阅板块，搜索三个词`机器人进群`,`接收消息`,`消息已读`, 把他们后面所有的权限全部勾选，最终会添加下列回调事件
-     - im:message
-     - im:message.group_at_msg(获取群组中所有消息)
-     - im:message.group_at_msg:readonly(接收群聊中@机器人消息事件)
-     - im:message.p2p_msg(获取用户发给机器人的单聊消息)
-     - im:message.p2p_msg:readonly(读取用户发给机器人的单聊消息)
-     - im:message:send_as_bot(获取用户在群组中@机器人的消息)
-     - im:chat:readonly(获取群组信息)
-     - im:chat(获取与更新群组信息)
+    1. 前往[开发者平台](https://open.feishu.cn/app?lang=zh-CN)创建应用,并获取到 APPID 和 Secret
+    2. 前往`应用功能-机器人`, 创建机器人
+    3. 从 cpolar、serverless 或 Railway 获得公网地址，在飞书机器人后台的 `事件订阅` 板块填写。例如，
+        - `http://xxxx.r6.cpolar.top`为 cpolar 暴露的公网地址
+        - `/webhook/event`为统一的应用路由
+        - 最终的回调地址为 `http://xxxx.r6.cpolar.top/webhook/event`
+    4. 在飞书机器人后台的 `机器人` 板块，填写消息卡片请求网址。例如，
+        - `http://xxxx.r6.cpolar.top`为 cpolar 暴露的公网地址
+        - `/webhook/card`为统一的应用路由
+        - 最终的消息卡片请求网址为 `http://xxxx.r6.cpolar.top/webhook/card`
+    5. 在事件订阅板块，搜索三个词`机器人进群`、 `接收消息`、 `消息已读`, 把他们后面所有的权限全部勾选。
+       进入权限管理界面，搜索`图片`, 勾选`获取与上传图片或文件资源`。
+       最终会添加下列回调事件
+        - im:resource(获取与上传图片或文件资源)
+        - im:message
+        - im:message.group_at_msg(获取群组中所有消息)
+        - im:message.group_at_msg:readonly(接收群聊中@机器人消息事件)
+        - im:message.p2p_msg(获取用户发给机器人的单聊消息)
+        - im:message.p2p_msg:readonly(读取用户发给机器人的单聊消息)
+        - im:message:send_as_bot(获取用户在群组中@机器人的消息)
+        - im:chat:readonly(获取群组信息)
+        - im:chat(获取与更新群组信息)
+
 
 5. 发布版本，等待企业管理员审核通过
 
@@ -259,19 +384,17 @@ dockerproxy.com/leizhenpeng/feishu-chatgpt:latest
 
 ## 更多交流
 
-企业如需定制部署，可联系 WeChat: `laolei_forkway`，支持发票~
+如需协助部署，或者其他定制服务，可联系下面的WeChat，支持发票~
 
-遇到其他问题，可以加入飞书群沟通~
+遇到问题，可以加入飞书群沟通~
 
-<img src='./docs/talk.png' alt='' width='300'/>
+<img src='./docs/talk.png' alt='' width='200'/>
 
-## 赞助项目
+## 交朋友 或者 鼓励一下
 
 如果你觉得这个项目对你有帮助，可以请作者买本书~
 
+<img width="400" src="https://user-images.githubusercontent.com/50035229/224462896-28f7b2d5-f443-4cc2-9790-7b72e5c53f15.png">
+
 😚 谢谢你啦 😚
 
-<details>
-    <summary>赞赏二维码</summary>
-    <img width="400" src="https://user-images.githubusercontent.com/50035229/222702169-cec777f9-cb0c-4f6a-90e5-418959e668e5.png">
-</details>
